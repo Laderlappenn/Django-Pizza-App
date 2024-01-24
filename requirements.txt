@@ -1,0 +1,15 @@
+asgiref==3.5.2  
+braintree==4.26.
+certifi==2023.11
+charset-normaliz
+Django==4.0.4   
+django-cleanup==
+django-debug-too
+idna==3.6       
+Pillow==9.2.0   
+python-decouple=
+pytz==2022.6    
+requests==2.31.0
+sqlparse==0.4.2 
+tzdata==2022.1  
+urllib3==2.1.0  

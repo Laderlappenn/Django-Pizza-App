@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends "../base.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+    {% block content %}
+    <form method="post" action="{% url 'users:register' %}">
+        {% csrf_token %}
+
+        {{form.as_ul}}
+
+        <input class="btn btn-primary" type="submit"/>
+        <input type="hidden" name="next" value="{{ next }}" />
+
+    </form>
+
+
+<div class="cart__bottom-buttons">
+    <a href="/" class="button button--add">
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 13L1 6.93015L6.86175 1" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span>Вернуться назад</span>
+    </a>
+</div>
+    {% endblock %}
+</body>
+</html>
